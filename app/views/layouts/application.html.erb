@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+      <h1 class='name'><%= link_to('rails website', index_path())%></h1>
+      <nav class='top-nav'>
+        <ul>
+          <li><%= link_to('home', index_path())%></li>
+          <li><%= link_to('home', index_path())%></li>
+        </ul>
+      </nav>
+      <br class='clearfloat' />
+    </header>
 
 <%= yield %>
+
+
+  <footer>
+
+  </footer>
 
 </body>
 </html>

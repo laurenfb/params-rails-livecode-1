@@ -12,7 +12,12 @@ class PostsController < ApplicationController
       number = params[:id].to_i
       if post[:id] == number
         @mypost = post
-      end 
+      end
+    end
+
+    if @mypost == nil
+      render :file => 'public/404.html', :status => :not_found, :layout => false
+      # @mypost = {id: params[:id].to_i, title: "That post was not found", body: ""}
     end
   end
 
@@ -28,6 +33,13 @@ class PostsController < ApplicationController
   def destroy
   end
 
+  def create
+    @params = params
+    @title = params["title"]
+    @author = params["author"]
+    @body = params["body"]
+  end
+
 
   def self.all_posts
     [
@@ -39,5 +51,9 @@ class PostsController < ApplicationController
     ]
   end
 
+  private
+  def post_params
+    params.require(:post).permit(:title, :author, :body)
+  end
 
 end

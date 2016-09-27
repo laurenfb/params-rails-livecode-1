@@ -1,0 +1,176 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+
+/* ------stuff that applies to everything---------*/
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+  font-size: 4.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 129, 78);
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(108, 108, 108);
+}
+
+
+h2{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.page-title{
+  margin: -5vh 5vw 5vh 3vw;
+}
+
+/* re-styling top title so it won't look like a regular link*/
+.top-title {
+  color: black;
+}
+
+.top-title:hover {
+  text-decoration: none;
+}
+
+/*--- the name that appears in the top right corner needs a little margin ----- */
+header h1{
+  margin: 2vmin 0 0 2vmin;
+}
+
+/* -----layout of the nav below name on front page-------*/
+nav ul li{
+  display: inline;
+  padding: 0 5% 0 5%;
+}
+
+.leftmost {
+  padding-right: 5%;
+  padding-left: 0;
+}
+
+.rightmost {
+  padding-right: 0;
+  padding-left: 5%;
+}
+
+/*------column on front page ------- */
+
+#front-page {
+  /*background-color: rgb(200, 162, 245);*/
+  width: 60vw;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 35vh;
+}
+
+.some-space {
+  padding: 2vmin;
+}
+
+/*----layout & styling top header -----*/
+
+header {
+  margin-bottom: 15vh;
+}
+
+h1:first-child {
+  display: inline;
+}
+
+.top-nav {
+  /*background-color: gold;*/
+  float: right;
+  margin: 1vmin;
+  padding: 2vmin;
+}
+
+.top-nav ul li {
+  padding: 0 15px 0 15px;
+  text-align: right;
+  /*background-color: violet;*/
+}
+  /*
+  .current-page {
+    background-color: rgb(223, 225, 255);
+  }*/
+
+  /*----layout & style about.html content -----*/
+
+  .about {
+    display: inline;
+  }
+
+  .about ul {
+    margin: 4vw 1vw auto;
+    /*list-style-type: circle;*/
+  }
+
+  .about ul li {
+    margin: 0.75vw auto 0.75vw auto;
+    display: block;
+  }
+
+  .hero {
+    height: 300px;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    border-radius: 50%;
+    float: left;
+  }
+
+  #see-more {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+
+  /*----laying out contact.html*/
+
+  .contact-methods{
+    text-align: center;
+    padding-top: 10vh;
+    /*background-color: teal;*/
+  }
+  .contact-methods img{
+    height: 100px;
+  }
+
+  .contact-methods li{
+    display: inline;
+    padding: 5vmin;
+  }
+
+  /*------laying out blog.html--------*/
+
+
+
+  .blog-post{
+    margin: 5vmin 0 5vmin 1vw;
+    padding-left: 5vw;
+    /*background-color: lightgreen;*/
+  }
+  .blog-post h3{
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 1vmin 1vmin 1vmin 0;
+  }
+
+  .blog-post h6{
+    margin: 1vmin 1vmin 2vmin 0;
+  }
+
+  .blog-post p {
+    margin-bottom: 2vmin;
+  }
